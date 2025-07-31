@@ -1,3 +1,4 @@
+import { AuthButton } from "@/components/auth-button";
 import Hero from "@/components/hero";
 import { ThemeSwitcher } from "@/components/theme-switcher";
 import Link from "next/link";
@@ -10,7 +11,10 @@ export default function Home() {
           <h1 className="font-extrabold text-4xl font-fuzzy w-full text-center md:w-fit">
             Momo Khichuri 💕
           </h1>
-          <ThemeSwitcher />
+          <div className="w-fit px-4 flex gap-4 items-center justify-between align-middle">
+            <AuthButton />
+            <ThemeSwitcher />
+          </div>
         </nav>
         <div className="flex-1 flex flex-col gap-20 max-w-5xl p-5">
           <main className="flex-1 flex flex-col gap-6 px-4">

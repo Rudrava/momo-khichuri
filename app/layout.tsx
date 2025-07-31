@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Fuzzy_Bubbles, Montserrat, Roboto } from "next/font/google";
+import { Fuzzy_Bubbles, Montserrat } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 
@@ -14,7 +14,7 @@ const fuzzyBubbles = Fuzzy_Bubbles({
   subsets: ["latin"],
 });
 
-const roboto = Montserrat({
+const montserrat = Montserrat({
   variable: "--font-montserrat",
   weight: ["100", "300", "400", "500", "700", "900"],
   style: ["normal", "italic"],
@@ -36,9 +36,9 @@ export default function RootLayout({
     <html
       lang="en"
       suppressHydrationWarning
-      className={`${roboto.variable} ${fuzzyBubbles.variable}`}
+      className={`${montserrat.variable} ${fuzzyBubbles.variable}`}
     >
-      <body className={`${roboto.className} antialiased`}>
+      <body className={`${montserrat.className} antialiased`}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
