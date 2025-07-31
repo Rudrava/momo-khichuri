@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <main className="min-h-screen flex flex-col items-center">
       <div className="flex-1 w-full flex flex-col gap-20 items-center">
-        <nav className="w-full flex justify-between align-middle items-center px-8 border-b border-b-foreground/10 h-16 sm:text-center">
-          <h1 className="font-extrabold text-4xl font-fuzzy w-full text-center md:w-fit">
+        <nav className="w-full flex justify-between align-middle items-center px-8 border-b border-b-foreground/10 py-4 sm:text-center flex-col h-fit  sm:flex-row">
+          <h1 className="font-extrabold text-4xl font-fuzzy w-full text-center md:w-fit ">
             Momo Khichuri 💕
           </h1>
           <div className="w-fit px-4 flex gap-4 items-center justify-between align-middle">
